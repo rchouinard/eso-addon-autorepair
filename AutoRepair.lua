@@ -29,7 +29,7 @@ function AutoRepair.HandleRepairs()
             local itemName, itemCondition = GetItemName(bag, slot), GetItemCondition(bag, slot)
             -- Check if item needs repair
             if itemName ~= "" and itemCondition < 100 then
-                local repairCost = GetItemrepairCost(bag, slot)
+                local repairCost = GetItemRepairCost(bag, slot)
                 totalCost = totalCost + repairCost
                 RepairItem(bag, slot)
             end
